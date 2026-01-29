@@ -1,10 +1,10 @@
 package main
 import "fmt"
 func convert(x int64) uint16 {
-    if x < 0 {
+    if x<0 {
 		panic("отрицательное число")
     }
-    if x > 65535 {  
+    if x>65535 {  
 		panic("число слишком большое")
     }
     return uint16(x)
